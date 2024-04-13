@@ -3,10 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA4D11FF2BBF377600D81B7A /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D11FE2BBF377600D81B7A /* FavoriteView.swift */; };
+		CA4D12012BBF37CB00D81B7A /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D12002BBF37CB00D81B7A /* FavoritePresenter.swift */; };
+		CA4D12042BBF57EE00D81B7A /* ProfileIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D12032BBF57EE00D81B7A /* ProfileIView.swift */; };
+		CA7760942BBCBB2900D366D2 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7760932BBCBB2900D366D2 /* HomePresenter.swift */; };
+		CA7760962BBCBB5D00D366D2 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7760952BBCBB5D00D366D2 /* HomeRouter.swift */; };
+		CA7760982BBCBCA100D366D2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7760972BBCBCA100D366D2 /* HomeView.swift */; };
+		CA8322142BBDD4C60069A91A /* ItemGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8322132BBDD4C60069A91A /* ItemGameView.swift */; };
+		CA8322202BBDFAC80069A91A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA83221F2BBDFAC80069A91A /* DetailPresenter.swift */; };
+		CA8322222BBDFE420069A91A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8322212BBDFE420069A91A /* DetailView.swift */; };
+		CA9980862BC7A429009CEECC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CA9980852BC7A429009CEECC /* Realm */; };
+		CA9980882BC7A429009CEECC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9980872BC7A429009CEECC /* RealmSwift */; };
+		CA99808B2BC7A441009CEECC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA99808A2BC7A441009CEECC /* Alamofire */; };
+		CA99808D2BC7A441009CEECC /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CA99808C2BC7A441009CEECC /* AlamofireDynamic */; };
+		CAA678192BC8B68500290CFC /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = CAA678182BC8B68500290CFC /* Core */; };
 		CAAD8A182BB9E43D00096639 /* GameCatalogue2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8A172BB9E43D00096639 /* GameCatalogue2App.swift */; };
 		CAAD8A1A2BB9E43D00096639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8A192BB9E43D00096639 /* ContentView.swift */; };
 		CAAD8A1C2BB9E43F00096639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAD8A1B2BB9E43F00096639 /* Assets.xcassets */; };
@@ -14,6 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA4D11FE2BBF377600D81B7A /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		CA4D12002BBF37CB00D81B7A /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		CA4D12032BBF57EE00D81B7A /* ProfileIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIView.swift; sourceTree = "<group>"; };
+		CA7760932BBCBB2900D366D2 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CA7760952BBCBB5D00D366D2 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		CA7760972BBCBCA100D366D2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CA8322132BBDD4C60069A91A /* ItemGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGameView.swift; sourceTree = "<group>"; };
+		CA83221F2BBDFAC80069A91A /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		CA8322212BBDFE420069A91A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CAAD8A142BB9E43D00096639 /* GameCatalogue2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCatalogue2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAD8A172BB9E43D00096639 /* GameCatalogue2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCatalogue2App.swift; sourceTree = "<group>"; };
 		CAAD8A192BB9E43D00096639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +49,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA99808B2BC7A441009CEECC /* Alamofire in Frameworks */,
+				CA99808D2BC7A441009CEECC /* AlamofireDynamic in Frameworks */,
+				CA9980882BC7A429009CEECC /* RealmSwift in Frameworks */,
+				CAA678192BC8B68500290CFC /* Core in Frameworks */,
+				CA9980862BC7A429009CEECC /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA4D11FD2BBF375B00D81B7A /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D11FE2BBF377600D81B7A /* FavoriteView.swift */,
+				CA4D12002BBF37CB00D81B7A /* FavoritePresenter.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		CA4D12022BBF57B700D81B7A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D12032BBF57EE00D81B7A /* ProfileIView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CA77608F2BBCB62200D366D2 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D12022BBF57B700D81B7A /* Profile */,
+				CA4D11FD2BBF375B00D81B7A /* Favorite */,
+				CA83221E2BBDFAA10069A91A /* Detail */,
+				CA7760902BBCB62C00D366D2 /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CA7760902BBCB62C00D366D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA7760932BBCBB2900D366D2 /* HomePresenter.swift */,
+				CA7760952BBCBB5D00D366D2 /* HomeRouter.swift */,
+				CA7760972BBCBCA100D366D2 /* HomeView.swift */,
+				CA8322132BBDD4C60069A91A /* ItemGameView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CA83221E2BBDFAA10069A91A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CA83221F2BBDFAC80069A91A /* DetailPresenter.swift */,
+				CA8322212BBDFE420069A91A /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		CAAD8A0B2BB9E43D00096639 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +127,8 @@
 		CAAD8A162BB9E43D00096639 /* GameCatalogue2 */ = {
 			isa = PBXGroup;
 			children = (
+				CA77608F2BBCB62200D366D2 /* Module */,
+				CAAD8A252BB9E44600096639 /* Core */,
 				CAAD8A172BB9E43D00096639 /* GameCatalogue2App.swift */,
 				CAAD8A192BB9E43D00096639 /* ContentView.swift */,
 				CAAD8A1B2BB9E43F00096639 /* Assets.xcassets */,
@@ -65,6 +143,13 @@
 				CAAD8A1E2BB9E43F00096639 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAAD8A252BB9E44600096639 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +168,13 @@
 			dependencies = (
 			);
 			name = GameCatalogue2;
+			packageProductDependencies = (
+				CA9980852BC7A429009CEECC /* Realm */,
+				CA9980872BC7A429009CEECC /* RealmSwift */,
+				CA99808A2BC7A441009CEECC /* Alamofire */,
+				CA99808C2BC7A441009CEECC /* AlamofireDynamic */,
+				CAA678182BC8B68500290CFC /* Core */,
+			);
 			productName = GameCatalogue2;
 			productReference = CAAD8A142BB9E43D00096639 /* GameCatalogue2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,11 @@
 				Base,
 			);
 			mainGroup = CAAD8A0B2BB9E43D00096639;
+			packageReferences = (
+				CA9980842BC7A429009CEECC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				CA9980892BC7A441009CEECC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CAA678172BC8B68500290CFC /* XCLocalSwiftPackageReference "Core" */,
+			);
 			productRefGroup = CAAD8A152BB9E43D00096639 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +235,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAAD8A1A2BB9E43D00096639 /* ContentView.swift in Sources */,
+				CA7760962BBCBB5D00D366D2 /* HomeRouter.swift in Sources */,
+				CA7760942BBCBB2900D366D2 /* HomePresenter.swift in Sources */,
+				CA4D12042BBF57EE00D81B7A /* ProfileIView.swift in Sources */,
+				CA4D11FF2BBF377600D81B7A /* FavoriteView.swift in Sources */,
+				CA8322202BBDFAC80069A91A /* DetailPresenter.swift in Sources */,
+				CA8322222BBDFE420069A91A /* DetailView.swift in Sources */,
+				CA8322142BBDD4C60069A91A /* ItemGameView.swift in Sources */,
+				CA4D12012BBF37CB00D81B7A /* FavoritePresenter.swift in Sources */,
+				CA7760982BBCBCA100D366D2 /* HomeView.swift in Sources */,
 				CAAD8A182BB9E43D00096639 /* GameCatalogue2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +448,59 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CAA678172BC8B68500290CFC /* XCLocalSwiftPackageReference "Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Core;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA9980842BC7A429009CEECC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CA9980892BC7A441009CEECC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA9980852BC7A429009CEECC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9980842BC7A429009CEECC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		CA9980872BC7A429009CEECC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9980842BC7A429009CEECC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		CA99808A2BC7A441009CEECC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9980892BC7A441009CEECC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CA99808C2BC7A441009CEECC /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9980892BC7A441009CEECC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		CAA678182BC8B68500290CFC /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAAD8A0C2BB9E43D00096639 /* Project object */;
 }

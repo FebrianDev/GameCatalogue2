@@ -6,19 +6,35 @@
 //
 
 import SwiftUI
+import Core
 
 struct ContentView: View {
+    
+    @State private var selection = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $selection) {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text(test)
+                }
+            
+            
+            FavoriteView()
+                .tabItem {
+                    Image(systemName: "heart.fill")
+                    Text("Favorite")
+                }
+            
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
+                }
+            
         }
-        .padding()
+        .accentColor(.blue)
     }
-}
-
-#Preview {
-    ContentView()
 }

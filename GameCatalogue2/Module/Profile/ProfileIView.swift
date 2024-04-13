@@ -7,12 +7,33 @@
 
 import SwiftUI
 
-struct ProfileIView: View {
+struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing:12){
+            Image("febrian")
+                .resizable()
+                .frame(width: 150.0, height: 150.0)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 10)
+            
+            
+            Text("M Dwi Febrian")
+                .font(.title3)
+                .bold()
+            
+            Text("Mobile Developer")
+                .font(.subheadline)
+            
+            
+            Divider()
+            
+            Text("Hello, my name is Febrian. I am a Mobile Developer. I possess skills in Mobile Development, including expertise in Kotlin/Java, Jetpack Compose, Flutter/Dart, and SwiftUI")
+                .font(.body)
+                .multilineTextAlignment(.leading)
+                .padding(.all, 16)
+            
+            Spacer()
+        }
     }
-}
-
-#Preview {
-    ProfileIView()
 }

@@ -6,13 +6,43 @@
 //
 
 import SwiftUI
+import Core
 
 struct FavoriteView: View {
+    
+    @ObservedObject var presenter: FavoritePresenter = FavoritePresenter(favoriteUseCase:Injection.init().provideFavorite())
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack(alignment:.leading){
+                ZStack {
+                    if presenter.loadingState {
+                        VStack {
+                            Text("Loading...")
+                            ProgressView()
+                        }
+                    } else {
+                        ScrollView(.vertical, showsIndicators: false) {
+                            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
+                                ForEach(
+                                    self.presenter.games,
+                                    id: \.id
+                                ) { game in
+                                    presenter.linkBuilder(for: game.id){
+                                        ItemGameView(game: game)
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }.onAppear {
+                    self.presenter.getGamesFavorite()
+                }.navigationBarTitle(
+                    Text("Favorite Apps"),
+                    displayMode: .automatic
+                )
+            }.padding()
+        }
     }
-}
-
-#Preview {
-    FavoriteView()
 }
