@@ -5,8 +5,8 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
-          XCODE_PROJECT: "RestaurantApp.xcodeproj" # Isikan nama project Anda.
-          XCODE_SCHEME: "RestaurantApp" # Isikan nama scheme project Anda.
+          XCODE_PROJECT: "GameCatalogue2.xcodeproj" # Isikan nama project Anda.
+          XCODE_SCHEME: "GameCatalogue2" # Isikan nama scheme project Anda.
     scripts:
       - name: Build debug app
         script: |
