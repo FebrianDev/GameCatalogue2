@@ -6,7 +6,7 @@ workflows:
       cocoapods: default
       vars:
           XCODE_PROJECT: "GameCatalogue2.xcodeproj" # Isikan nama project Anda.
-          XCODE_SCHEME: "GameCatalogue2" # Isikan nama scheme project Anda.
+          XCODE_SCHEME: "GameCatalogue3" # Isikan nama scheme project Anda.
     scripts:
       - name: Build debug app
         script: |
