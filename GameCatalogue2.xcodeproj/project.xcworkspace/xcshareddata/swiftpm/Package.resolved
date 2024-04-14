@@ -1,5 +1,5 @@
 {
-  "originHash" : "dcf64ec043abd44a2e2d9a9180057cc8d2ca92b67a90ea50073bfc6582721ac8",
+  "originHash" : "15596e04187be3675312bc1ea62e950b3c9b7de3eb5f3aac2d93e9a30384d4f7",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
         "version" : "5.9.1"
+      }
+    },
+    {
+      "identity" : "game-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FebrianDev/Game-Core.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e80c54c5248d3971de99dcfd835240e630ef1c4b"
       }
     },
     {
