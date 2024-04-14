@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Core
 
 struct ContentView: View {
     
@@ -17,7 +16,7 @@ struct ContentView: View {
             HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
-                    Text(test)
+                    Text("Home")
                 }
             
             

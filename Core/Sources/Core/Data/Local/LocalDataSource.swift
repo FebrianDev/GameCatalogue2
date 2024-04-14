@@ -13,10 +13,10 @@ protocol LocalDataSourceProtocol: AnyObject {
     
     func getGames() -> AnyPublisher<[GameEntity], Error>
     func addGames(from game: [GameEntity]) -> AnyPublisher<Bool, Error>
-    func addGameFavorite(game:FavoriteEntity)-> AnyPublisher<Bool, any Error>
+    func addGameFavorite(game:FavoriteEntity) -> AnyPublisher<Bool, any Error>
     func getGamesFavorite() -> AnyPublisher<[FavoriteEntity], any Error>
-    func deleteGameFavorite(id:Int)-> AnyPublisher<Bool, any Error>
-    func isExistFavorite(id:Int)-> AnyPublisher<Bool, any Error>
+    func deleteGameFavorite(id:Int) -> AnyPublisher<Bool, any Error>
+    func isExistFavorite(id:Int) -> AnyPublisher<Bool, any Error>
     
 }
 

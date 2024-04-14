@@ -9,10 +9,9 @@ import Foundation
 import Combine
 import Core
 
-class DetailPresenter : ObservableObject {
+class DetailPresenter: ObservableObject {
     
     private var cancellables: Set<AnyCancellable> = []
-    //private let router = HomeRouter()
     private let detailUseCase: DetailUseCase
     private let favoriteUseCase:FavoriteUseCase
     private let gameId:Int
@@ -67,7 +66,7 @@ class DetailPresenter : ObservableObject {
             case .finished:
                 self.loadingState = false
             }
-        }, receiveValue: { success in
+        }, receiveValue: { _ in
             
         })
         .store(in: &cancellables)

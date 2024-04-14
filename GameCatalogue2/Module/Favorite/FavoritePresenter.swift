@@ -10,7 +10,7 @@ import Combine
 import SwiftUI
 import Core
 
-class FavoritePresenter : ObservableObject {
+class FavoritePresenter: ObservableObject {
     
     private var cancellables: Set<AnyCancellable> = []
     private let router = HomeRouter()

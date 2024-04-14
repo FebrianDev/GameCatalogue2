@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        VStack(spacing:12){
+        VStack(spacing: 12){
             Image("febrian")
                 .resizable()
                 .frame(width: 150.0, height: 150.0)

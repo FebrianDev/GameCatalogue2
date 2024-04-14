@@ -22,16 +22,20 @@ struct FavoriteView: View {
                             ProgressView()
                         }
                     } else {
-                        ScrollView(.vertical, showsIndicators: false) {
-                            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-                                ForEach(
-                                    self.presenter.games,
-                                    id: \.id
-                                ) { game in
-                                    presenter.linkBuilder(for: game.id){
-                                        ItemGameView(game: game)
+                        if(self.presenter.games.isEmpty){
+                            Text("Tidak ada favorit")
+                        }else{
+                            ScrollView(.vertical, showsIndicators: false) {
+                                LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
+                                    ForEach(
+                                        self.presenter.games,
+                                        id: \.id
+                                    ) { game in
+                                        presenter.linkBuilder(for: game.id){
+                                            ItemGameView(game: game)
+                                        }
+                                        
                                     }
-                                    
                                 }
                             }
                         }
