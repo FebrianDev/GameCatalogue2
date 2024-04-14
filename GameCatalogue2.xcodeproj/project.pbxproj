@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,12 +20,11 @@
 		CA9980882BC7A429009CEECC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9980872BC7A429009CEECC /* RealmSwift */; };
 		CA99808B2BC7A441009CEECC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA99808A2BC7A441009CEECC /* Alamofire */; };
 		CA99808D2BC7A441009CEECC /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CA99808C2BC7A441009CEECC /* AlamofireDynamic */; };
-		CAA678192BC8B68500290CFC /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = CAA678182BC8B68500290CFC /* Core */; };
 		CAAD8A182BB9E43D00096639 /* GameCatalogue2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8A172BB9E43D00096639 /* GameCatalogue2App.swift */; };
 		CAAD8A1A2BB9E43D00096639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8A192BB9E43D00096639 /* ContentView.swift */; };
 		CAAD8A1C2BB9E43F00096639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAD8A1B2BB9E43F00096639 /* Assets.xcassets */; };
 		CAAD8A1F2BB9E43F00096639 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAD8A1E2BB9E43F00096639 /* Preview Assets.xcassets */; };
-		CAE2A6142BCB6A4700EDEC69 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = CAE2A6132BCB6A4700EDEC69 /* Core */; };
+		CAE2A6172BCB6C2500EDEC69 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = CAE2A6162BCB6C2500EDEC69 /* Core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +52,8 @@
 				CA99808B2BC7A441009CEECC /* Alamofire in Frameworks */,
 				CA99808D2BC7A441009CEECC /* AlamofireDynamic in Frameworks */,
 				CA9980882BC7A429009CEECC /* RealmSwift in Frameworks */,
-				CAA678192BC8B68500290CFC /* Core in Frameworks */,
+				CAE2A6172BCB6C2500EDEC69 /* Core in Frameworks */,
 				CA9980862BC7A429009CEECC /* Realm in Frameworks */,
-				CAE2A6142BCB6A4700EDEC69 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +113,7 @@
 			children = (
 				CAAD8A162BB9E43D00096639 /* GameCatalogue2 */,
 				CAAD8A152BB9E43D00096639 /* Products */,
+				CAE2A6152BCB6C2500EDEC69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +153,13 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		CAE2A6152BCB6C2500EDEC69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,8 +181,7 @@
 				CA9980872BC7A429009CEECC /* RealmSwift */,
 				CA99808A2BC7A441009CEECC /* Alamofire */,
 				CA99808C2BC7A441009CEECC /* AlamofireDynamic */,
-				CAA678182BC8B68500290CFC /* Core */,
-				CAE2A6132BCB6A4700EDEC69 /* Core */,
+				CAE2A6162BCB6C2500EDEC69 /* Core */,
 			);
 			productName = GameCatalogue2;
 			productReference = CAAD8A142BB9E43D00096639 /* GameCatalogue2.app */;
@@ -209,7 +214,6 @@
 			packageReferences = (
 				CA9980842BC7A429009CEECC /* XCRemoteSwiftPackageReference "realm-swift" */,
 				CA9980892BC7A441009CEECC /* XCRemoteSwiftPackageReference "Alamofire" */,
-				CAA678172BC8B68500290CFC /* XCLocalSwiftPackageReference "Core" */,
 				CAE2A6122BCB6A4700EDEC69 /* XCRemoteSwiftPackageReference "Game-Core" */,
 			);
 			productRefGroup = CAAD8A152BB9E43D00096639 /* Products */;
@@ -453,13 +457,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		CAA678172BC8B68500290CFC /* XCLocalSwiftPackageReference "Core" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Core;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		CA9980842BC7A429009CEECC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -508,11 +505,7 @@
 			package = CA9980892BC7A441009CEECC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
 		};
-		CAA678182BC8B68500290CFC /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Core;
-		};
-		CAE2A6132BCB6A4700EDEC69 /* Core */ = {
+		CAE2A6162BCB6C2500EDEC69 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CAE2A6122BCB6A4700EDEC69 /* XCRemoteSwiftPackageReference "Game-Core" */;
 			productName = Core;
